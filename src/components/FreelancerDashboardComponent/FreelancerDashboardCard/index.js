@@ -1,0 +1,26 @@
+import React from "react";
+import { Typography, Grid, Card, CardContent } from "@mui/material";
+import CountUp from "react-countup";
+function FreelancerDashboardCard({ Title, Value }){
+    return (
+        <Grid sx={{}} item xs={12} sm={6} md={6} lg={6}>
+          <Card
+            sx={{
+              backgroundColor: "aliceblue",
+              p: 1,
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <CardContent>
+              <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+                {Title}
+              </Typography>
+              <Typography variant="p" sx={{ fontSize: "1.5rem" }}>
+                <CountUp end={Value} duration={2} />
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      );
+}
+export default FreelancerDashboardCard;
