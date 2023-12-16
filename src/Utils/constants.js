@@ -37,10 +37,8 @@ export const settings = [
 
 export const Freelancerpages = [
   { id: 1, name: "Dashboard" },
-  { id: 2, name: "Search Project" },
-  { id: 3, name: "View all Bid" },
-  { id: 4, name: "Bid on Project" },
-  { id: 5, name: "Manage Project" }
+  { id: 2, name: "View Bids" },
+  { id: 3, name: "Manage Project" }
 ];
 
 export const dashboardMainHeading = "Welcome, [User]";
